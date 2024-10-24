@@ -83,6 +83,8 @@ const fetchTasks = createAsyncThunk<
     }
   } catch (e) {
     return rejectWithValue(null);
+  } finally {
+    dispatch(setAppStatus({ status: "idle" }));
   }
 });
 
