@@ -28,6 +28,7 @@ function App() {
         <Route path='*' element={<Navigate to='/' />} /> {/* 404 page */}
       </Routes>
     </BrowserRouter>
+    //hello world
   );
 }
 
